@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy — Kessel Sabacc</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0e0e10;
+      --surface: #17171a;
+      --border: #2a2a2f;
+      --accent: #c9a84c;
+      --accent-dim: rgba(201,168,76,0.12);
+      --text: #e8e6e0;
+      --muted: #888;
+      --serif: 'DM Serif Display', Georgia, serif;
+      --sans: 'DM Sans', sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      font-weight: 300;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    /* Header */
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 3rem 2rem 2.5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 120% at 50% 0%, rgba(201,168,76,0.07) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .app-tag {
+      display: inline-block;
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      padding: 0.3em 0.9em;
+      border-radius: 2px;
+      margin-bottom: 1.2rem;
+    }
+
+    h1 {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 400;
+      letter-spacing: -0.01em;
+      color: #fff;
+      margin-bottom: 0.6rem;
+    }
+
+    .last-updated {
+      font-size: 0.8rem;
+      color: var(--muted);
+      letter-spacing: 0.05em;
+    }
+
+    /* Layout */
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 2rem 6rem;
+    }
+
+    /* Intro box */
+    .intro {
+      background: var(--accent-dim);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 6px 6px 0;
+      padding: 1.2rem 1.5rem;
+      margin-bottom: 3rem;
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 2.8rem;
+      opacity: 0;
+      transform: translateY(16px);
+      animation: fadeUp 0.5s ease forwards;
+    }
+
+    section:nth-child(1) { animation-delay: 0.05s; }
+    section:nth-child(2) { animation-delay: 0.12s; }
+    section:nth-child(3) { animation-delay: 0.19s; }
+    section:nth-child(4) { animation-delay: 0.26s; }
+    section:nth-child(5) { animation-delay: 0.33s; }
+    section:nth-child(6) { animation-delay: 0.40s; }
+
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .section-number {
+      font-family: var(--sans);
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.4rem;
+    }
+
+    h2 {
+      font-family: var(--serif);
+      font-size: 1.35rem;
+      font-weight: 400;
+      color: #fff;
+      margin-bottom: 0.8rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #bbb;
+      margin-bottom: 0.8rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(201,168,76,0.3);
+      transition: border-color 0.2s;
+    }
+    a:hover { border-color: var(--accent); }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.78rem;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="app-tag">Kessel Sabacc</div>
+  <h1>Privacy Policy</h1>
+  <p class="last-updated">Last updated: May 11, 2026</p>
+</header>
+
+<main>
+  <div class="intro">
+    This privacy policy applies to the <strong>Kessel Sabacc</strong> Android application (package ID: <code>com.norodd.kesselsabacc</code>), developed by Norodd.
+  </div>
+
+  <section>
+    <div class="section-number">01</div>
+    <h2>Information We Collect</h2>
+    <p>Kessel Sabacc does not collect, store, or transmit any personal information. The app operates entirely on your device and requires no account creation or login.</p>
+    <p>No data is sent to any server. No analytics, crash reporting, or tracking tools are used.</p>
+  </section>
+
+  <section>
+    <div class="section-number">02</div>
+    <h2>Third-Party Services</h2>
+    <p>This app does not integrate any third-party SDKs, advertising networks, or analytics services. Your usage data remains solely on your device.</p>
+  </section>
+
+  <section>
+    <div class="section-number">03</div>
+    <h2>Permissions</h2>
+    <p>The app only requests permissions that are strictly necessary for its core functionality. No permission is used to access personal data, contacts, location, or any sensitive information.</p>
+  </section>
+
+  <section>
+    <div class="section-number">04</div>
+    <h2>Children's Privacy</h2>
+    <p>This app is not directed at children under the age of 13. We do not knowingly collect any information from children. As this app collects no data at all, no special handling is required.</p>
+  </section>
+
+  <section>
+    <div class="section-number">05</div>
+    <h2>Changes to This Policy</h2>
+    <p>If the app's data practices change in a future update, this privacy policy will be updated accordingly. Continued use of the app after any changes constitutes acceptance of the revised policy.</p>
+  </section>
+
+  <section>
+    <div class="section-number">06</div>
+    <h2>Contact</h2>
+    <p>If you have any questions or concerns about this privacy policy, please reach out via the contact information listed on the app's Google Play Store page.</p>
+  </section>
+</main>
+
+<footer>
+  &copy; 2026 Norodd &mdash; Kessel Sabacc &mdash; All rights reserved.
+</footer>
+
+</body>
+</html>
